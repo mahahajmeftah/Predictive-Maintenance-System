@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
+import logging
 
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 package_name="Predictive_Maintainance"
 
 list_of_files=[
