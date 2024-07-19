@@ -15,6 +15,8 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class DataTransformationConfig:
     transormed_data_path:str = os.path.join("artifacts")
+    train_data_path:str = os.path.join("artifacts")
+    test_data_path:str = os.path.join("artifacts")
 
 
 
@@ -75,6 +77,12 @@ class DataTransformation:
         X_resampled, y_resampled = smote.fit_resample(X, y)
         df_sampled = pd.concat([X_resampled, y_resampled], axis=1)
         logger.info("Oversampling completed successfully")
+
+        from sklearn.model_selection import train_test_split
+        train,test= train_test_split(df_sampled,test_size=0.2,train_size=0.8)
+        train.to_csv(os.path.join(self.config.train_data_path,"train.csv"),index=False)
+        test.to_csv(os.path.join(self.config.test_data_path,"test.csv"),index=False)
+        logger.info("Saved train and test datasets in artifacts directory")
         
 
 
