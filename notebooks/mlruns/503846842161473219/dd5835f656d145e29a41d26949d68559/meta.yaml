@@ -1,0 +1,15 @@
+artifact_uri: file:///local/home/hadjmefm/Predictive-Maintenance-System/notebooks/mlruns/503846842161473219/dd5835f656d145e29a41d26949d68559/artifacts
+end_time: 1721631801603
+entry_point_name: ''
+experiment_id: '503846842161473219'
+lifecycle_stage: active
+run_id: dd5835f656d145e29a41d26949d68559
+run_name: overjoyed-snail-720
+run_uuid: dd5835f656d145e29a41d26949d68559
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721631793550
+status: 3
+tags: []
+user_id: hadjmefm

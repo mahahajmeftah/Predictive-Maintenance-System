@@ -1,0 +1,15 @@
+artifact_uri: file:///local/home/hadjmefm/Predictive-Maintenance-System/notebooks/mlruns/503846842161473219/bcb5501b4d314521bfc6372d6c954983/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '503846842161473219'
+lifecycle_stage: active
+run_id: bcb5501b4d314521bfc6372d6c954983
+run_name: traveling-skunk-54
+run_uuid: bcb5501b4d314521bfc6372d6c954983
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721633223056
+status: 1
+tags: []
+user_id: hadjmefm
