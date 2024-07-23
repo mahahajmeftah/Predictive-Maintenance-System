@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Maintenance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">Predictive Maintenance System</div>
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/monitor_quality">Monitor Quality</a></li>
+            <li><a href="/model_performance">Model Performance Monitor</a></li>
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <button class="open-btn" id="open-btn">&#9776;</button>
+        <div class="container">
+            <h2>Machine Failure Prediction</h2>
+            <form action="/predict" method="post">
+                <label for="type_value">Type Value:</label>
+                <select id="type_value" name="type_value" required>
+                    <option value="">Select Type</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select><br><br>
+
+                <label for="rpm">RPM:</label>
+                <input type="number" id="rpm" name="rpm" step="any" required><br><br>
+
+                <label for="torque">Torque:</label>
+                <input type="number" id="torque" name="torque" step="any" required><br><br>
+
+                <label for="tool_wear">Tool Wear:</label>
+                <input type="number" id="tool_wear" name="tool_wear" step="any" required><br><br>
+
+                <label for="air_temp">Air Temperature:</label>
+                <input type="number" id="air_temp" name="air_temp" step="any" required><br><br>
+
+                <label for="process_temp">Process Temperature:</label>
+                <input type="number" id="process_temp" name="process_temp" step="any" required><br><br>
+
+                <input type="submit" value="Predict">
+            </form>
+            {% if result %}
+                <h2>Prediction Result: {{ result }}</h2>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

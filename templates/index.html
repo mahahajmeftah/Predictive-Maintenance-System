@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Maintenance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">Predictive Maintenance System</div>
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/monitor_quality">Monitor Quality</a></li>
+            <li><a href="/model_performance">Model Performance Monitor</a></li>
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <button class="open-btn" id="open-btn">&#9776;</button>
+        <div class="container home-container">
+            <div class="hero-section">
+                <h1>Welcome to the Predictive Maintenance System</h1>
+                <p>Optimize your operations with advanced predictive analytics</p>
+                <div class="hero-shape"></div>
+            </div>
+            <div class="features-section">
+                <h2>Key Features</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon predict-icon"></div>
+                        <h3>Predict</h3>
+                        <p>Use our predictive model to assess the likelihood of machine failure.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon monitor-icon"></div>
+                        <h3>Monitor Quality</h3>
+                        <p>Access real-time quality monitoring tools for operational excellence.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon performance-icon"></div>
+                        <h3>Model Performance</h3>
+                        <p>Evaluate and adjust the performance of the predictive model.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section">
+                <h2>Get Started</h2>
+                <p>Begin your journey to optimized maintenance. Select an option from the menu to start.</p>
+                <a href="/predict" class="cta-button">Start Predicting</a>
+            </div>
+        </div>
+    </div>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="shape shape4"></div>
+    <div class="shape shape5"></div>
+</body>
+</html>
