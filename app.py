@@ -28,5 +28,14 @@ def predict():
         # For GET requests, just render the form without any result
         return render_template("predict.html")
 
+@app.route("/data_drift")
+def data_drift():
+    return render_template("data_drift_report_evidently.html")
+
+@app.route('/model_performance')
+def model_performance():
+    return render_template("machine_failure_classification_report_evidently.html")
+
+
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=8080)
