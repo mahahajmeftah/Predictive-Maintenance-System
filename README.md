@@ -5,8 +5,8 @@
 <a href ="#dataset">Dataset<a> •
 <a href ="#pipeline">Pipeline<a> •
 </p>
+
 [Screencast from 08-21-2024 08:59:25 AM.webm](https://github.com/user-attachments/assets/3374bedb-838d-4dd4-82ae-c73f2e5e1f1c)
-   
 <a id='porblem'></a>
 ## Problem Statement
 - Build an end-to-end machine learning system that predicts wether a particular equipement will fail or not. The features include air, process temperatures, rotational speed, troque and tool wear.
